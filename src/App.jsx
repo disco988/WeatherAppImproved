@@ -19,9 +19,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (history.length > 0) {
+   
       localStorage.setItem("weatherHistory", JSON.stringify(history));
-    }
+    
   }, [history]);
 
   const fetchLocations = async (city) => {
